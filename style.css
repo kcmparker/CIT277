@@ -1,0 +1,91 @@
+body {
+    background-color: #000000;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+* {
+    box-sizing: border-box;
+}
+#imgHeader {
+    float: left;
+    width: 66.66%;
+    padding: 10px;
+    height: 500px;
+    background: url(Assets/cupcakes-2250367_1920.jpg) no-repeat left;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    height: 500px;
+    object-position: center;
+    object-fit: fill;
+    overflow: hidden;
+    vertical-align: middle;
+}
+nav{
+    text-align: center;
+    font-size: 2vw;
+}
+nav after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1 {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10vw;
+    text-shadow: -6px 0 #000000, 0 6px #000000, 6px 0 #000000, 0 -6px #000000;
+}
+@media (max-width:800px) {
+  .left, .main, .right {
+    width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
+  }
+}
+main {
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 50px;
+}
+p {
+    font-size: 1.25vw;
+}
+.doubleColumn {
+    float: left;
+    width: 66.66%;
+    padding: 10px;
+    height: 500px;
+    text-align: center;
+}
+h2 {
+    font-size: 3vw;
+    padding: 10px;
+    text-align: center;
+}
+img {
+    height: 500px;
+    padding: 0px;
+}
+.columnText {
+    background-color: #ffffff;
+    float: left;
+    width: 33.33%;
+    height: 500px;
+    outline-color: #2196f3;
+    outline-style: double;
+    outline-offset: -15px;
+    padding: 30px;
+}
+.funQuote {
+    text-align: center;
+    color: #000000;
+    font-family: arial;
+    font-size: 3vw;
+    font-weight: 500;
+
+}
+footer p {
+    text-align: right;
+}
