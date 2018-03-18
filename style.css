@@ -1,91 +1,164 @@
 body {
-    background-color: #000000;
-    font-family: sans-serif;
-    color: #ffffff;
+    font-size:13px; 
+    font-family: "Times New Roman", sans-serif; 
+    color:#919191; 
+    background-color:#232323;
 }
-* {
-    box-sizing: border-box;
+header, #container, #footer {
+    display:block; 
+    width:1000px; 
+    margin: 0 auto;
 }
-#imgHeader {
+article {
     float: left;
-    width: 66.66%;
-    padding: 10px;
-    height: 500px;
-    background: url(Assets/cupcakes-2250367_1920.jpg) no-repeat left;
-}
-.column {
-    float: left;
-    width: 33.33%;
-    height: 500px;
+    width: 50%;
     object-position: center;
     object-fit: fill;
     overflow: hidden;
     vertical-align: middle;
-}
-nav{
-    text-align: center;
-    font-size: 2vw;
-}
-nav after {
-    content: "";
-    display: table;
-    clear: both;
-}
-h1 {
-    text-align: center;
-    vertical-align: middle;
-    font-size: 10vw;
-    text-shadow: -6px 0 #000000, 0 6px #000000, 6px 0 #000000, 0 -6px #000000;
-}
-@media (max-width:800px) {
-  .left, .main, .right {
-    width:100%;/*The width is 100%, when the viewport is 800px or smaller*/
-  }
 }
 main {
     clear: both;
     overflow: hidden;
     text-align: center;
     vertical-align: middle;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
-p {
-    font-size: 1.25vw;
+h1, h2, h3, h4, h5, h6 {
+    font-size:22px; 
+    font-style:italic; 
 }
-.doubleColumn {
+aside.one_quarter {
+    color:#ECECEC;
     float: left;
-    width: 66.66%;
-    padding: 10px;
-    height: 500px;
-    text-align: center;
-}
-h2 {
-    font-size: 3vw;
-    padding: 10px;
-    text-align: center;
-}
-img {
-    height: 500px;
-    padding: 0px;
-}
-.columnText {
-    background-color: #ffffff;
-    float: left;
-    width: 33.33%;
-    height: 500px;
-    outline-color: #2196f3;
-    outline-style: double;
-    outline-offset: -15px;
-    padding: 30px;
+    max-height: 200px;
 }
 .funQuote {
     text-align: center;
-    color: #000000;
-    font-family: arial;
-    font-size: 3vw;
-    font-weight: 500;
-
+    color: #FF9900;
+    padding: 0 20px;
 }
-footer p {
-    text-align: right;
+.fl_left {
+    float:left;
+}
+.fl_right {
+    float:right;
+}
+.imgl {
+    padding:4px; 
+    border:1px solid #D6D6D6; 
+    text-align:center;
+    float:left; 
+    margin:0 15px 15px 0; 
+    clear:left;
+}
+.one_quarter, .two_quarter, {
+    display:block; 
+    float:left; 
+    margin:0 20px 0 0;
+}
+.one_quarter {
+    width:25%;
+}
+#hgroup {
+    float:left; 
+}
+#hgroup h1 {
+    font-size:36px;
+}
+#hgroup h2 {
+    font-size:13px;
+}
+header nav {
+    display:block; 
+    width:100%; 
+    margin:0; 
+    padding:20px 0; 
+    color:#FF9900; 
+    background-color:#232323; 
+    clear:both;
+}
+header nav ul {
+    padding:0 20px;
+}
+header nav li {
+    display:inline; 
+    text-transform:uppercase;
+}
+header nav li.last {
+    margin-right:0;
+}
+header nav li a {
+    color:#C0BAB6; 
+    background-color:#232323;
+}
+header nav li a:hover {
+    color:#FF9900; 
+    background-color:#232323;
+}
+#container section {
+    display:block; 
+    margin-bottom:30px; 
+    padding:0;
+}
+#container .more {
+    text-align:right;
+}
+
+#titleheader figure img {
+    float:right; 
+    width:65%; 
+    height:300px;
+}
+article img {
+    object-fit: fill;
+    object-position: center;
+    overflow: hidden;
+    vertical-align: middle;
+    max-height: 320px;
+}
+figcaption {
+    display:block; 
+    float:left; 
+    width:30%; 
+    height:280px; 
+    padding:10px; 
+    overflow:hidden; 
+    color:#989898; 
+    background-color:#464646;
+    text-align: center;
+}
+#titleheader figure h2 {
+    font-size:42px; 
+}
+.bio {
+    margin: 0px 20px 20px;
+    line-height: 1.5;
+}
+#aboutbio {
+    max-height: 200px;
+    width: 75%;
+}
+.companybio {
+    max-width: 80%;
+    float: right;
+    margin: 0px;
+}
+section table {
+    width: 100%;
+    height: 300px;
+}
+th {
+    border-bottom: 1px solid #D6D6D6;
+}
+tr {
+    text-align: left;
+}
+td input {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    height: auto;
 }
