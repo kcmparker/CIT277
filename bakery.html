@@ -18,8 +18,8 @@
     </div>
     <nav>
       <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="bakery.html">Bakery</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="bakery.html">Bakery</a></li>
         <li><a href="about.html">About</a></li>
         <li class="last"><a href="contact.html">Contact Us</a></li>
       </ul>
@@ -36,50 +36,75 @@
         </figcaption>
       </figure>
     </section>
+    
     <main>
-        <section class="bakeryItems">
+    <section>
+            <form class="shoppingCart">
             <div class="fl_left">
                 <h3>Fun Cupcakes!</h3>
-                <img src="Assets/cupcakes-2250367_1920.jpg" alt="Get Baked! Cupcakes">
-                <br>
-                <a href="bakery.html">Take me to the order form!</a>
+                <img src="Assets/cupcakes-2250367_1920.jpg" alt="Get Baked! Cupcakes"><br>
+                <span>Price: $3.00 each</span><br><br>
+                <label for="quantityCupcakes">How many? </label>
+                <input type="number" min="0" size="2" id="cupcakes" placeholder="0">
             </div>
             <div class="fl_left">
                 <h3>Perfect Pies!</h3>
-                <img src="Assets/pecan-pie-2087626_640.jpg" alt="Get Baked! Pecan Pie">
-                                <br>
-                <a href="bakery.html">Take me to the order form!</a>
-            </div>
+                <img src="Assets/pecan-pie-2087626_640.jpg" alt="Get Baked! Pecan Pie"><br>
+                <span>Price: $8.00 each</span><br><br>
+                <label for="quantityPies">How many? </label>
+                <input type="number" min="0" size="2" id="pies" placeholder="0">
+            </div>            
             <div class="fl_left">
                 <h3>Celebration Cakes!</h3>
-                <img src="Assets/cake-727854_640.jpg" alt="Get Baked! Birthday Cake">
-                                <br>
-                <a href="bakery.html">Take me to the order form!</a>
+                <img src="Assets/cake-727854_640.jpg" alt="Get Baked! Birthday Cake"><br>
+                <span>Price: $18.00 each</span><br><br>
+                <label for="quantityCakes">How many? </label>
+                <input type="number" min="0" size="2" id="cakes" placeholder="0">
             </div>
             <div class="fl_left">
                 <h3>Fresh Baked Bread!</h3>
-                <img src="Assets/bread-1782526__340.jpg" alt="Get Baked! Variety of Breads">
-                                <br>
-                <a href="bakery.html">Take me to the order form!</a>
+                <img src="Assets/bread-1782526__340.jpg" alt="Get Baked! Variety of Breads"><br>
+                <span>Price: $6.00 each</span><br><br>
+                <label for="quantityBread">How many? </label>
+                <input type="number" min="0" size="2" id="breads" placeholder="0">
             </div>
             <div class="fl_left">
                 <h3>Delicious Pastries!</h3>
-                <img src="Assets/bread-2593797_640.jpg" alt="Get Baked! Pasteries">
-                                <br>
-                <a href="bakery.html">Take me to the order form!</a>
-            </div> 
+                <img src="Assets/bread-2593797_640.jpg" alt="Get Baked! Pasteries"><br>
+                <span>Price: $4.00 each</span><br><br>
+                <label for="quantityPastries">How many? </label>
+                <input type="number" min="0" size="2" id="pastries" placeholder="0">
+            </div>            
             <div class="fl_left">
                 <h3>Magnificent Macaroons!</h3>
-                <img src="Assets/macarons-2548818_640.jpg" alt="Get Baked! Macaroons">
-                                <br>
-                <a href="bakery.html">Take me to the order form!</a>
+                <img src="Assets/macarons-2548818_640.jpg" alt="Get Baked! Macaroons"><br>
+                <span>Price: $1.50 each</span><br><br>
+                <label for="quantityMacaroon">How many? </label>
+                <input type="number" min="0" size="2" id="macaroons" placeholder="0">
             </div>
-        </section>
+
+            <hr style="color: aqua; width: 100%">
+            <div>
+                <h2>Order Summary</h2>
+                <div class="fl_right">
+                <span id="orderSummary"></span>
+                </div>
+                <div class="fl_right">
+                <p> Your Estimated Total is:</p><br><br>
+                <span id="orderTotal"></span>
+                <label for="buttonOrder">Yes, I am happy with this order.</label><br><br>
+                <input type="submit" value="Sumbit My Order!" id="buttonOrder">
+                </div>
+            </div>
+        </form>
+        <article class="column">
+
+        </article>
+    </section>
     </main>
     <section>
       <aside class="one_quarter">
-            <h2 class="funQuote">You have found <br>the truth . . .
-            <br><br>. . . the cake is <br><u>not</u> a lie!</h2>        
+            <h2 class="funQuote">Life is what you<br>BAKE it!<br><br> Life is too short to be stressed.<br>Get DESSERTS!</h2>        
     </aside>
         
       <section>
@@ -87,8 +112,8 @@
             <figcaption id="aboutbio" class="fl_right">
                 <h2 class="title">Get Baked!</h2>
                 <img class="fl_left" src="Assets/cupcakes-2250367_1920.jpg" width="130" height="130" alt="Get Baked!"><p class="companybio">Get Baked! is a fictitious company created by Kristin Parker, a student at The University of Phoenix for the purpose of practicing web development and creating a project assignment in the CIT/277 course. All products and/or people listed on the Get Baked! website are also made up.</p><br><br><br><br><p class="more"><a href="about.html">Learn More! &raquo;</a></p></figcaption></figure>
-        </section>
       </section>
+    </section>
   </div>
 </div>
   <footer id="footer">

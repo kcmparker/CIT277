@@ -1,10 +1,11 @@
 body {
-    font-size:13px; 
+    font-size:14px;
+    line-height: 1.5;
     font-family: "Times New Roman", sans-serif; 
     color:#919191; 
     background-color:#232323;
 }
-header, #container, #footer {
+header, #titleheader, #container, #footer {
     display:block; 
     width:1000px; 
     margin: 0 auto;
@@ -25,7 +26,12 @@ main {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-size: 48px;
+    font-style: italic;
+    color: #FF9900;
+}
+h2, h3, h4, h5, h6 {
     font-size:22px; 
     font-style:italic; 
 }
@@ -64,27 +70,24 @@ aside.one_quarter {
 #hgroup {
     float:left; 
 }
-#hgroup h1 {
-    font-size:36px;
-}
-#hgroup h2 {
-    font-size:13px;
-}
+
 header nav {
     display:block; 
     width:100%; 
     margin:0; 
-    padding:20px 0; 
+    padding:010px 0; 
     color:#FF9900; 
     background-color:#232323; 
     clear:both;
 }
 header nav ul {
-    padding:0 20px;
+    padding:0 35px;
 }
 header nav li {
     display:inline; 
     text-transform:uppercase;
+    text-align: center;
+    padding: 10px;
 }
 header nav li.last {
     margin-right:0;
@@ -102,14 +105,16 @@ header nav li a:hover {
     margin-bottom:30px; 
     padding:0;
 }
-#container .more {
+.more {
     text-align:right;
 }
 
 #titleheader figure img {
     float:right; 
-    width:65%; 
+    width:64%; 
     height:300px;
+    object-fit: cover;
+    padding-right: 30px
 }
 article img {
     object-fit: fill;
@@ -140,10 +145,12 @@ figcaption {
     max-height: 200px;
     width: 75%;
 }
-.companybio {
+#aboutbio, .companybio {
     max-width: 80%;
+    max-height: 200px;
     float: right;
     margin: 0px;
+    text-align: left;
 }
 section table {
     width: 100%;
@@ -161,4 +168,24 @@ td input {
 textarea {
     width: 100%;
     height: auto;
+}
+figcaption img {
+    object-fit: cover;
+}
+footer {
+    clear: both;
+}
+
+.bakeryItems img, .shoppingCart img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    clear: both;
+}
+.bakeryItems div, .shoppingCart div {
+    margin: 25px;
+    padding: 10px;
+}
+article video {
+    max-width: 90%;
 }
